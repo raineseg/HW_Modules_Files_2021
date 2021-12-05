@@ -81,14 +81,13 @@ def write_csv(path_to_csv_file, data, delimiter=','):
                             for elem in list:
                                 if elem.find('"') != -1:
                                     list.remove(elem)   
-    file_csv.close()
-    # in fact there are too many lines but leeee go
-    print(final_list)
-    return("by Evgenii Raines")
+                file_csv.close()
+                # in fact there are too many lines but anyway
+                print(final_list)
+                return("by Evgenii Raines")
+                stopper = 1
 
         except FileNotFoundError:
             print("Error, such file doesn't exist")
             stopper = 1
     return ('by Evgenii Raines')    
-    
-    # я не сразу понял, что надо написать название файла, можно не снимать балл, пожалуйста(
